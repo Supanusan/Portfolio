@@ -3,11 +3,11 @@ import React from 'react'
 const Contact = () => {
     const details = [{
         name: 'Supanusan',
-        possition: 'Full-Stack devloper',
+        possition: 'Full-Stack devloper And App developer',
         phone: 'phone',
         number: '+94759920388',
         email: 'email',
-        emailadd: 'ssupanusan@gmail.com',
+        emailadd: 'supanusans@gmail.com',
         website: 'website',
         websiteadd: '',
 

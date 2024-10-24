@@ -5,10 +5,12 @@ import { FaFacebookF, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 const Aboutme = () => {
     const socialmedia = [
         {
-            tag: FaFacebookF
+            tag: FaFacebookF,
+            link: 'https://web.facebook.com/supa.supanusan.79/?viewas=&should_open_composer=false&show_switched_toast=false&show_invite_to_follow=false&show_switched_tooltip=false&show_podcast_settings=false&show_community_review_changes=false&show_community_rollback=false&show_follower_visibility_disclosure=false&bypass_exit_warning=true'
         },
         {
-            tag: FaWhatsapp
+            tag: FaWhatsapp,
+            link: 'https://wa.me/+94759920388?text=HI Supanu'
         },
         {
             tag: FaLinkedinIn
@@ -43,7 +45,7 @@ const Aboutme = () => {
                     <img src="my.png" alt="myimg" />
                     <div className='text-black w-full h-10 bg-sky-200 flex justify-evenly py-2 rounded-sm'>
                         {socialmedia.map((app, index) => (
-                            <app.tag key={app.index} className='hover:text-orange-600 text-2xl' />
+                            <a href={app.link} target="_blank" rel="noreferrer">  <app.tag key={app.index} className='hover:text-orange-600 text-2xl' /></a>
                         )
                         )}
                     </div>
@@ -74,7 +76,7 @@ const Aboutme = () => {
                     <img src=" /my.jpg" alt=" profile" className='rounded' />
                     <div className='text-black w-full h-10 bg-sky-200 flex justify-evenly py-2 rounded-sm'>
                         {socialmedia.map((app, index) => (
-                            <app.tag key={app.index} className='hover:text-orange-600 text-2xl' />
+                            <a href={app.link}>  <app.tag key={app.index} className='hover:text-orange-600 text-2xl' /></a>
                         )
                         )}
                     </div>
