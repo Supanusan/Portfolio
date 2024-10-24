@@ -36,8 +36,8 @@ const Education = () => {
 
             {/* To mobile view */}
             <div className='flex  w-full py-16 overflow-auto md:hidden'>
-                {data.map((data) => (
-                    <div className='flex flex-col px-10  py-4 mx-9 border-solid border-4 border-sky-200 '>
+                {data.map((data, index) => (
+                    <div key={index} className='flex flex-col px-10  py-4 mx-9 border-solid border-4 border-sky-200 '>
                         <p className='text-gray-600'>  {data.degree.year}</p>
                         <p className='py-3 text-gray-400'>{data.degree.result}</p>
                         <div className='flex items-center'>
@@ -58,8 +58,8 @@ const Education = () => {
 
             {/* To Laptop view */}
             <div className=' hidden py-16 overflow-auto sm:flex'>
-                {data.map((data) => (
-                    <div className='flex flex-col px-20  py-4 mx-9 border-solid border-4 border-sky-200 '>
+                {data.map((data, index) => (
+                    <div key={index} className='flex flex-col px-20  py-4 mx-9 border-solid border-4 border-sky-200 '>
                         <p className='text-gray-600'>  {data.degree.year}</p>
                         <p className='py-3 text-gray-400'>{data.degree.result}</p>
                         <div className='flex items-center'>

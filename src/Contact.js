@@ -34,8 +34,8 @@ const Contact = () => {
                         <button className='bg-orange-600 w-1/2 mt-4 h-10 text-white'>Submit</button>
                     </div>
                     <div className='1/2'>
-                        {details.map((details) => (
-                            <div className='py-10'>
+                        {details.map((details, index) => (
+                            <div key={index} className='py-10'>
                                 <p className='text-2xl text-gray-800 font-semibold'>{details.name}</p>
                                 <p className='text-xl text-gray-500 font-bold py-1'>{details.possition}</p>
                                 <p className='text-gray-700 pt-5 pb-3'>{details.phone}</p>
@@ -70,8 +70,8 @@ const Contact = () => {
                         <button className='bg-orange-600 w-1/2 mt-4 h-10 text-white'>Submit</button>
                     </div>
                     <div className='1/2'>
-                        {details.map((details) => (
-                            <div className='py-10'>
+                        {details.map((details, index) => (
+                            <div key={index} className='py-10'>
                                 <p className='text-2xl text-gray-800 font-semibold'>{details.name}</p>
                                 <p className='text-xl text-gray-500 font-bold py-1'>{details.possition}</p>
                                 <p className='text-gray-700 pt-5 pb-3'>{details.phone}</p>

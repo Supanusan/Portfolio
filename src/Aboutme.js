@@ -45,7 +45,7 @@ const Aboutme = () => {
                     <img src="my.png" alt="myimg" />
                     <div className='text-black w-full h-10 bg-sky-200 flex justify-evenly py-2 rounded-sm'>
                         {socialmedia.map((app, index) => (
-                            <a href={app.link} target="_blank" rel="noreferrer">  <app.tag key={app.index} className='hover:text-orange-600 text-2xl' /></a>
+                            <a href={app.link} key={index} target="_blank" rel="noreferrer">  <app.tag className='hover:text-orange-600 text-2xl' /></a>
                         )
                         )}
                     </div>
@@ -76,7 +76,7 @@ const Aboutme = () => {
                     <img src=" /my.jpg" alt=" profile" className='rounded' />
                     <div className='text-black w-full h-10 bg-sky-200 flex justify-evenly py-2 rounded-sm'>
                         {socialmedia.map((app, index) => (
-                            <a href={app.link}>  <app.tag key={app.index} className='hover:text-orange-600 text-2xl' /></a>
+                            <a href={app.link} key={index} >  <app.tag className='hover:text-orange-600 text-2xl' /></a>
                         )
                         )}
                     </div>
