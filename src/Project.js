@@ -10,7 +10,7 @@ const Project = () => {
         {
             img: '/2.png',
             discription: "Chatting Application",
-            link: ' '
+            link: ' https://github.com/Supanusan/Chatting-application'
         },
         {
             img: '/1.webp',
