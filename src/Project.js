@@ -5,7 +5,7 @@ const Project = () => {
         {
             img: "/3.png",
             discription: "Account creation llike FB",
-            link: 'https://github.com/Supanusan/Mernstack-Login-register'
+            link: 'https://github.com/Supanusan/Account-creation-and-login'
         },
         {
             img: '/2.png',
